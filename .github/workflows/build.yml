@@ -33,7 +33,7 @@ jobs:
           restore-keys: ${{ runner.os }}-m2
 
       - name: Build
-        run: mvn clean package --batch-mode -Dproject.version=$BUILD_VERSION -Dproject.branch=ngloader
+        run: mvn clean package --batch-mode -Drevision=$BUILD_VERSION -Dproject.branch=ngloader
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
