@@ -1409,8 +1409,7 @@ public class Util extends Queue {
         try {
             InputStreamReader reader = new InputStreamReader(CoreProtect.getInstance().getClass().getResourceAsStream("/plugin.yml"));
             branch = YamlConfiguration.loadConfiguration(reader).getString("branch");
-            reader.close();
-
+            reader.close()
             if (branch == null || branch.equals("${project.branch}")) {
                 branch = "";
             }
