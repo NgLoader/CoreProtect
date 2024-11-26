@@ -39,4 +39,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: coreprotect-plugin
-          path: ./CoreProtect-*.jar
+          path: ./**/CoreProtect-*.jar
